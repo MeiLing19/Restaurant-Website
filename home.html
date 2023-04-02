@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website TTS</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@200;300;400;500;600;700&family=Source+Serif+Pro:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">LanyTan<span>Resto</span></a>
+
+      <div class="navbar-nav">
+        <a href="#home" class="home">Beranda</a>
+        <a href="#about" class="about">Tentang</a>
+        <a href="#listmenu" class="listmenu">Menu</a>
+        <a href="#kontak" class="kontak">Kontak</a>
+      </div>
+
+      <div class="navbar-icon">
+        <a href="#search" id="search"
+          ><i data-feather="search" onclick="searchFunction()"></i
+        ></a>
+        <a href="#shop" id="shopping-cart"
+          ><i data-feather="shopping-cart" onclick="cartFunction()"></i
+        ></a>
+        <a href="#menu" id="menu"><i data-feather="menu"></i></a>
+        <!-- Awal Search Box -->
+        <div class="search-box">
+          <input type="search" name="" id="" placeholder="Search Here..." />
+        </div>
+        <!-- Akhir Search Box -->
+        <!-- Awal Cart Box -->
+        <div class="cart-box">
+          <img src="Image/menu1.png" alt="" />
+          <h6>Nasi Ayam Crispy x1</h6>
+          <p>Rp.16.000</p>
+          <img src="Image/menu2.png" alt="" />
+          <h6>Salad Sayur Tan x1</h6>
+          <p>Rp.18.000</p>
+          <img src="Image/menu3.png" alt="" />
+          <h6>Mie Ramen Sayur x1</h6>
+          <p>Rp.20.000</p>
+          <h3>Total Bayar : 54.000</h3>
+        </div>
+        <!-- Akhir Cart Box -->
+      </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Awal Banner Section Class -->
+    <section class="banner" id="home">
+      <main class="content">
+        <a href="https://github.com/MeiLing19"
+          ><img
+            src="https://toppng.com/uploads/preview/and-blank-effect-transparent-11546868080xgtiz6hxid.png"
+        /></a>
+        <h1><br />Welcome to<span> TanResto!</span></h1>
+        <p>Menyajikan makanan dan minuman selama lebih dari 22 tahun!</p>
+        <a href="#listmenu" class="listmenu">Beli Disini!</a>
+      </main>
+      <div class="image" id="klik">
+        <a href="https://www.instagram.com/lany.tan19/"
+          ><img
+            src="https://toppng.com/uploads/preview/and-blank-effect-transparent-11546868080xgtiz6hxid.png"
+        /></a>
+      </div>
+      <div class="image3" id="klik3">
+        <a href="https://www.instagram.com/lany.tan19/"
+          ><img
+            src="https://toppng.com/uploads/preview/and-blank-effect-transparent-11546868080xgtiz6hxid.png"
+        /></a>
+      </div>
+    </section>
+    <!-- Akhir Banner Section Class -->
+
+    <!-- Awal About Section -->
+    <section id="about" class="about">
+      <h2><br /><br /><span>Tentang</span>Kami</h2>
+
+      <div class="row">
+        <div class="about-img">
+          <img src="Image/about.jpg" alt="Tentang Kami" />
+        </div>
+
+        <div class="content">
+          <h3>Kenapa memilih Resto kami?</h3>
+          <p>
+            Semua resep yang digunakan merupakan resep asli dari Mujigae Resto,
+            dimasak dengan menggunakan bahan-bahan berkualitas, diproses dengan
+            teknik khusus, dan dikontrol dengan standard quality assurance yang
+            ketat.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir About Section -->
+
+    <!-- Awal Menu Section -->
+    <section id="listmenu" class="listmenu">
+      <h2><br /><br /><span>Menu</span>Kami</h2>
+      <p>
+        Haha ini menu terbaik kami ayo diorder<br />ada Salad Sayur Tan dan lain
+        lain
+      </p>
+      <div class="row">
+        <table>
+          <tr>
+            <div class="menu-card">
+              <img
+                src="Image/menu1.png"
+                alt="Esspresso"
+                class="menu-card-img"
+              />
+              <h3 class="menu-card-title">- Nasi Ayam Crispy -</h3>
+              <p class="menu-card-price">IDR 16K</p>
+            </div>
+            <div class="menu-card">
+              <img
+                src="Image/menu2.png"
+                alt="SaladSayur"
+                class="menu-card-img"
+              />
+              <h3 class="menu-card-title">- Salad Sayur Tan -</h3>
+              <p class="menu-card-price">IDR 18K</p>
+            </div>
+            <div class="menu-card">
+              <img src="Image/menu3.png" alt="MieRamen" class="menu-card-img" />
+              <h3 class="menu-card-title">- Mie Ramen Sayur -</h3>
+              <p class="menu-card-price">IDR 20K</p>
+            </div>
+            <div class="menu-card">
+              <img
+                src="Image/menu4.png"
+                alt="SaladBuah"
+                class="menu-card-img"
+              />
+              <h3 class="menu-card-title">- Salad Buah Tan -</h3>
+              <p class="menu-card-price">IDR 19K</p>
+            </div>
+            <div class="menu-card">
+              <img
+                src="Image/menu5.png"
+                alt="KentangKukus"
+                class="menu-card-img"
+              />
+              <h3 class="menu-card-title">- Kentang Kukus Tan -</h3>
+              <p class="menu-card-price">IDR 14K</p>
+            </div>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <!-- Akhir Menu Section -->
+
+    <!-- Awal Kontak Section -->
+    <section id="kontak" class="kontak">
+      <h2><br /><br /><span>Kontak</span>Kami</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nisi
+        pariatur placeat molestiae nam non.
+      </p>
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15818.003573983075!2d111.51632792297129!3d-7.629155711987191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e79bef677ae1b83%3A0xff75e30ea4e77cb7!2sJl.%20Bali%20No.70%2C%20Kartoharjo%2C%20Kec.%20Kartoharjo%2C%20Kota%20Madiun%2C%20Jawa%20Timur%2063117!5e0!3m2!1sid!2sid!4v1676340615012!5m2!1sid!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"
+        ></iframe>
+
+        <form action="">
+          <div class="input-group">
+            <i data-feather="user"></i>
+            <input type="text" placeholder="nama" />
+          </div>
+          <div class="input-group">
+            <i data-feather="mail"></i>
+            <input type="text" placeholder="email" />
+          </div>
+          <div class="input-group">
+            <i data-feather="phone"></i>
+            <input type="text" placeholder="No Hp/Telp" />
+          </div>
+                    <script type="text/javascript">
+            function c() {
+              var isian = prompt("Masukkan pesanmu!", "Isi disini");
+              document.write(isian);
+            }
+          </script>
+          <button
+            type="submit"
+            class="btn"
+            onclick="c()"
+            value="Masukkan pesanmu!"
+          >
+            Kirim Pesan!
+          </button>
+        </form>
+      </div>
+    </section>
+    <!-- Akhir Kontak Section -->
+
+    <!-- Awal Footer -->
+    <footer>
+      <div class="socials">
+        <br /><br /><br />
+        <a href="https://www.instagram.com/lany.tan19/"
+          ><i data-feather="instagram"></i
+        ></a>
+        <a href="https://twitter.com/jokinyareihan"
+          ><i data-feather="twitter"></i
+        ></a>
+        <a href="https://www.facebook.com/profile.php?id=100007322295862"
+          ><i data-feather="facebook"></i
+        ></a>
+      </div>
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#listmenu">Menu</a>
+        <a href="#contact">Kontak</a>
+      </div>
+      <div class="credit">
+        <p>Created by <a href="#">LanyTan</a>. | &copy; 2023</p>
+      </div>
+    </footer>
+    <!-- Akhir Footer -->
+
+    <!-- Feather Icon -->
+    <script>
+      feather.replace();
+
+      function searchFunction() {
+        var searchInput = document.createElement("input");
+        searchInput.setAttribute("type", "text");
+        searchInput.setAttribute("placeholder", "Cari produk...");
+        searchInput.setAttribute("id", "search-bar");
+        searchInput.classList.add("search-bar");
+
+        var searchIcon = document.querySelector(".search-icon i");
+        searchIcon.classList.add("clicked");
+
+        var header = document.querySelector("header");
+        header.appendChild(searchInput);
+      }
+    </script>
+
+    <!-- Java Script -->
+    <script src="javascript.js"></script>
+  </body>
+</html>
